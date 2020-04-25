@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 哈哈哈的博客
+title: 年的博客
 subtitle: ''
-description: '哈哈哈的个人博客，编程，个人提升'
+description: '偶尔做做菜，编程，个人提升'
 keywords: C/C++, python，shell，读后感
-author: 哈哈哈
+author: 年
 language: zh-Hans
 timezone: ''
 
@@ -47,7 +47,7 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -108,3 +108,27 @@ search:
   field: post
   format: html
   limit: 10000
+  
+  
+# hexo-neat
+# 博文压缩
+neat_enable: true
+# 压缩html
+neat_html:
+ enable: true
+ exclude:
+# 压缩css
+neat_css:
+ enable: true
+ exclude:
+   - '*/*.min.css'
+# 压缩js
+neat_js:
+ enable: true
+ mangle: true
+ output:
+ compress:
+ exclude:
+   - '**/*.min.js'
+   - '**/jquery.fancybox.pack.js'
+   - '**/index.js'

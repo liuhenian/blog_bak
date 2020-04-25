@@ -92,17 +92,17 @@ index_with_subtitle: false
 # Value before `||` delimeter is the target link.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, question icon will be loaded.
 menu:
-  home: /
+  home: /|| home
   #about: /about/ || user
-  tags: /tags
-  categories: /categories
-  archives: /archives
+  tags: /tags/|| tags
+  categories: /categories/|| list
+  archives: /archives/|| history
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   #search: 搜索
 menu_icons:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -152,7 +152,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: https://i.loli.net/2020/04/25/kPqzJw1DSvO5xHX.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -172,8 +172,8 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right (only for Pisces | Gemini).
-  position: left
-  #position: right
+  #position: left
+  position: right
 
   # Sidebar Display, available value (only for Muse | Mist):
   #  - post    expand on posts automatically. Default.
@@ -214,7 +214,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -376,15 +376,15 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
+  enable: true
+  appid: VBByAbFde77pmpukA63ReCGe-gzGzoHsz
+  appkey: e6gAzDTUh1HSYxctqB5jurIh
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  placeholder: 没有问题么？ # comment box placeholder
   avatar: mm # gravatar style
-  guest_info: nick,mail,link # custom comment header
-  pageSize: 10 # pagination size
+  guest_info: nick,mail # custom comment header
+  pageSize: 5 # pagination size
 
 
 # Support for youyan comments system.
@@ -529,9 +529,9 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: VBByAbFde77pmpukA63ReCGe-gzGzoHsz
+  app_key: e6gAzDTUh1HSYxctqB5jurIh
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -602,7 +602,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
